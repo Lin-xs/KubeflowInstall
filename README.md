@@ -31,15 +31,15 @@ while ! kustomize build example | awk '!/well-defined/' | kubectl apply -f -; do
 
 以下安装KF Pipeline
 ### 安装pipeline sdk
-```
+```bash
 URL=https://storage.googleapis.com/ml-pipeline/release/latest/kfp.tar.gz
 pip install "${URL}" --upgrade
 ```
 
 ### clone kubeflow pipeline
-```
+```bash
 git clone --single-branch --branch 0.3.0 https://github.com/kubeflow/pipelines.git
-
+```
 
 一切就绪后，运行
 ```bash
